@@ -1,11 +1,9 @@
 package com.dgmf.springbootappfromscratch.web;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.dgmf.springbootappfromscratch.entity.Course;
@@ -22,7 +20,7 @@ public class CourseController {
 
 	@GetMapping("/courses/1")
 	public Course getCourseDetails() {
-		return new Course(1, "Learn Microservices", "Glaz Dodo"); 
+		return new Course(3, "Learn Microservices 3", "Glaz Dodo"); 
 	}
 
 }
